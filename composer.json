@@ -3,6 +3,7 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
+<<<<<<< HEAD
     "keywords": [
         "laravel",
         "framework"
@@ -16,6 +17,17 @@
         "laravel/ui": "^4.6"
     },
     "require-dev": {
+=======
+    "keywords": ["laravel", "framework"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^12.0",
+        "laravel/tinker": "^2.10.1"
+    },
+    "require-dev": {
+        "beyondcode/laravel-er-diagram-generator": "^4.0",
+>>>>>>> e3104d0cc82be6935792b089fb27d42c43e8b9b3
         "fakerphp/faker": "^1.23",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.13",
@@ -54,10 +66,20 @@
         ],
         "dev": [
             "Composer\\Config::disableProcessTimeout",
+<<<<<<< HEAD
             "npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"npm run dev\" --names='server,queue,vite'"
         ]
     },
     "extra": {
+=======
+            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "12.x-dev"
+        },
+>>>>>>> e3104d0cc82be6935792b089fb27d42c43e8b9b3
         "laravel": {
             "dont-discover": []
         }
@@ -71,6 +93,10 @@
             "php-http/discovery": true
         }
     },
+<<<<<<< HEAD
     "minimum-stability": "stable",
+=======
+    "minimum-stability": "dev",
+>>>>>>> e3104d0cc82be6935792b089fb27d42c43e8b9b3
     "prefer-stable": true
 }
