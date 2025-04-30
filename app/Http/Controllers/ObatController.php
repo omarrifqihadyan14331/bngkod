@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Obat;
 use Illuminate\Http\Request;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 class ObatController extends Controller
 {
     /**
@@ -13,10 +16,14 @@ class ObatController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         $obats = Obat::all();
         return view('dokter/obat.index', compact('obats'));
 
 
+=======
+        return view('dokter/obat.index');
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
 
@@ -25,7 +32,11 @@ class ObatController extends Controller
      */
     public function create()
     {
+<<<<<<< HEAD
         return view('dokter/obat.create');
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -33,6 +44,7 @@ class ObatController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
         $request->validate([
             'nama_obat' => 'required',
             'kemasan' => 'required',
@@ -40,6 +52,9 @@ class ObatController extends Controller
         ]);
         Obat::create($request->all());
         return redirect()->route('obat.index');
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -55,7 +70,11 @@ class ObatController extends Controller
      */
     public function edit(Obat $obat)
     {
+<<<<<<< HEAD
         return view('dokter/obat.edit', compact('obat'));
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -63,6 +82,7 @@ class ObatController extends Controller
      */
     public function update(Request $request, Obat $obat)
     {
+<<<<<<< HEAD
         
             $request->validate([
                 'nama_obat' => 'required',
@@ -72,6 +92,9 @@ class ObatController extends Controller
             $obat->update($request->all());
             return redirect()->route('obat.index');
     
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -79,8 +102,12 @@ class ObatController extends Controller
      */
     public function destroy(Obat $obat)
     {
+<<<<<<< HEAD
         $obat->delete();
         return redirect()->route('obat.index');
 
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 }

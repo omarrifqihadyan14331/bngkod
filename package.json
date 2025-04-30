@@ -6,6 +6,10 @@
         "dev": "vite"
     },
     "devDependencies": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
         "@popperjs/core": "^2.11.6",
         "@tailwindcss/vite": "^4.0.0",
         "axios": "^1.8.2",
@@ -15,5 +19,16 @@
         "sass": "^1.56.1",
         "tailwindcss": "^4.0.0",
         "vite": "^6.2.4"
+<<<<<<< HEAD
+=======
+=======
+        "@tailwindcss/vite": "^4.0.0",
+        "axios": "^1.7.4",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^1.2.0",
+        "tailwindcss": "^4.0.0",
+        "vite": "^6.0.11"
+>>>>>>> e3104d0cc82be6935792b089fb27d42c43e8b9b3
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 }

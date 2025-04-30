@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+<<<<<<< HEAD
 @section('subtitle', 'Periksa')
 @section('content_header_title', 'Data Periksa')
 @section('content_body')
@@ -48,3 +49,12 @@
         </div>
     </div>
 @endsection
+=======
+
+{{-- Customize layout sections --}}
+
+
+@section('subtitle', 'Welcome')
+@section('content_header_title', 'Home')
+@section('content_header_subtitle', 'Welcome')
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d

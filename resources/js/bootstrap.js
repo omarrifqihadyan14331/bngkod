@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 import 'bootstrap';
 
 /**
@@ -6,10 +10,19 @@ import 'bootstrap';
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e3104d0cc82be6935792b089fb27d42c43e8b9b3
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 import axios from 'axios';
 window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
@@ -32,3 +45,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? 'https') === 'https',
 //     enabledTransports: ['ws', 'wss'],
 // });
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e3104d0cc82be6935792b089fb27d42c43e8b9b3
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d

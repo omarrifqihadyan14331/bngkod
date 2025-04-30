@@ -2,11 +2,15 @@
 
 namespace App\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+=======
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 use Illuminate\Database\Eloquent\Model;
 
 class DetailPeriksa extends Model
 {
+<<<<<<< HEAD
     use HasFactory;
 
     protected $fillable = [
@@ -23,4 +27,7 @@ class DetailPeriksa extends Model
     {
         return $this->belongsTo(Obat::class, 'id_obat');
     }
+=======
+    //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 }

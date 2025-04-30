@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Periksa;
+<<<<<<< HEAD
 use App\Models\DetailPeriksa;
 use App\Models\Obat;
 use App\Models\User;
+=======
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 use Illuminate\Http\Request;
 
 class PeriksaController extends Controller
@@ -15,6 +18,7 @@ class PeriksaController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         $periksas = Periksa::with(['pasien', 'dokter', 'obats'])->get();
         return view('dokter.periksa.index', compact('periksas'));
         
@@ -74,11 +78,26 @@ public function pasienStore(Request $request)
     return redirect()->route('periksa.pasienindex')->with('success', 'Permintaan periksa berhasil diajukan.');
 }
 
+=======
+        return view('dokter/periksa.index');
+    }
+
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
+    }
+
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
         $request->validate([
             'id_pasien' => 'required|exists:users,id',
             'id_dokter' => 'required|exists:users,id',
@@ -104,6 +123,9 @@ public function pasienStore(Request $request)
         return redirect()->route('periksa.index')->with('success', 'Data periksa berhasil disimpan.');
 
         
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -111,7 +133,11 @@ public function pasienStore(Request $request)
      */
     public function show(Periksa $periksa)
     {
+<<<<<<< HEAD
         return view('dokter.periksa.show', compact('periksa'));
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -119,6 +145,7 @@ public function pasienStore(Request $request)
      */
     public function edit(Periksa $periksa)
     {
+<<<<<<< HEAD
         // Mengambil data pasien, dokter, dan obat yang diperlukan
         $pasiens = User::where('role', 'pasien')->get();
         $dokters = User::where('role', 'dokter')->get();
@@ -129,6 +156,9 @@ public function pasienStore(Request $request)
 
         // Mengembalikan view dengan data yang diperlukan
         return view('dokter.periksa.edit', compact('periksa', 'pasiens', 'dokters', 'obats'));
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -136,6 +166,7 @@ public function pasienStore(Request $request)
      */
     public function update(Request $request, Periksa $periksa)
     {
+<<<<<<< HEAD
         $request->validate([
             'tgl_periksa' => 'required|date',
             'catatan' => 'nullable|string',
@@ -160,6 +191,9 @@ public function pasienStore(Request $request)
         }
 
         return redirect()->route('periksa.index')->with('success', 'Data periksa berhasil diperbarui.');
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -167,7 +201,11 @@ public function pasienStore(Request $request)
      */
     public function destroy(Periksa $periksa)
     {
+<<<<<<< HEAD
         $periksa->delete();
         return redirect()->route('periksa.index')->with('success', 'Data periksa berhasil dihapus.');
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 }

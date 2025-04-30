@@ -5,8 +5,11 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
+<<<<<<< HEAD
 use Illuminate\Http\Request;
 
+=======
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 
 class LoginController extends Controller
 {
@@ -45,6 +48,7 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
         $this->middleware('auth')->only('logout');
     }
+<<<<<<< HEAD
 
     
 
@@ -57,4 +61,6 @@ public function logout(Request $request)
 
     return redirect()->route('login'); 
 }
+=======
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 }

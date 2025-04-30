@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Hash;
+=======
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 
 class UserController extends Controller
 {
@@ -13,8 +16,12 @@ class UserController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         $users = User::all();
         return view('users.index', compact('users'));
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -22,7 +29,11 @@ class UserController extends Controller
      */
     public function create()
     {
+<<<<<<< HEAD
         return view('users.create');
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -30,6 +41,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
@@ -42,6 +54,9 @@ class UserController extends Controller
         User::create($validated);
 
         return redirect()->route('users.index')->with('success', 'User berhasil ditambahkan.');
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -49,7 +64,11 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
+<<<<<<< HEAD
         return view('users.show', compact('user'));
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -57,7 +76,11 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
+<<<<<<< HEAD
         return view('users.edit', compact('user'));
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -65,6 +88,7 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
+<<<<<<< HEAD
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => "required|email|unique:users,email,{$user->id}",
@@ -78,6 +102,9 @@ class UserController extends Controller
         $user->update($validated);
 
         return redirect()->route('users.index')->with('success', 'User berhasil diperbarui.');
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 
     /**
@@ -85,7 +112,11 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
+<<<<<<< HEAD
         $user->delete();
         return redirect()->route('users.index')->with('success', 'User berhasil dihapus.');
+=======
+        //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
     }
 }

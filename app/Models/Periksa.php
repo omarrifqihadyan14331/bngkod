@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Periksa extends Model
 {
+<<<<<<< HEAD
     // Menonaktifkan timestamps jika tidak digunakan
     public $timestamps = false;
 
@@ -43,4 +44,7 @@ class Periksa extends Model
 }
 
 
+=======
+    //
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 }

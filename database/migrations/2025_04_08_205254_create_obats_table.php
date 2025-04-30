@@ -10,6 +10,7 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up(): void
+<<<<<<< HEAD
 {
     Schema::create('obats', function (Blueprint $table) {
         $table->id();
@@ -19,6 +20,18 @@ return new class extends Migration
         $table->integer('harga')->nullable();
     });
 }
+=======
+    {
+        Schema::create('obats', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+            $table->string('name_obat')->max(50);
+            $table->string('kemasan')->max(35);
+            $table->integer('harga')->nullable();
+
+        });
+    }
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
 
     /**
      * Reverse the migrations.

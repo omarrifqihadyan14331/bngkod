@@ -85,7 +85,14 @@ return [
                 'smtp',
                 'log',
             ],
+<<<<<<< HEAD
             'retry_after' => 60,
+=======
+<<<<<<< HEAD
+            'retry_after' => 60,
+=======
+>>>>>>> e3104d0cc82be6935792b089fb27d42c43e8b9b3
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
         ],
 
         'roundrobin' => [
@@ -94,7 +101,14 @@ return [
                 'ses',
                 'postmark',
             ],
+<<<<<<< HEAD
             'retry_after' => 60,
+=======
+<<<<<<< HEAD
+            'retry_after' => 60,
+=======
+>>>>>>> e3104d0cc82be6935792b089fb27d42c43e8b9b3
+>>>>>>> adbd3e70a3c725fac0464c3e8b7cda961f5beb2d
         ],
 
     ],
